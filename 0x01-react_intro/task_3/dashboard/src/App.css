@@ -1,56 +1,29 @@
 :root {
-  --color-red: rgba(226, 30, 30, 0.767);
+  --color-brand: #e01d3f;
 }
 
-* {
-  box-sizing: border-box;
-}
-button {
- margin: 1.2rem;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.App {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-.App .App-header {
+.App-header {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  border-bottom: var(--color-red) 6px solid;
-  margin: 0;
-  color: var(--color-red);
+  color: var(--color-brand);
+  font-size: 20px;
+  border-bottom: 3px solid var(--color-brand);
 }
 
-.App .App-header .logo-container {
-  width: 150px;
-  height: 150px;
+.App-header img {
+  width: 200px;
 }
 
-.App .App-header .logo-container img {
+.App-body {
+  margin: 50px;
+}
+
+.App-footer {
+  border-top: 3px solid var(--color-brand);
   width: 100%;
-}
-
-.App .App-body {
-  padding: 1.5rem;
-  height: 78%;
-}
-
-.App .App-footer {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  position: fixed;
   bottom: 0;
-  border-top: var(--color-red) 6px solid;
-  text-align: center;
-  padding: 1.4rem;
+  font-style: italic;
 }
